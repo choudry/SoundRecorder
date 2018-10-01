@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SoundRecordFragment">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/line_progress"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:background_color="#ec363a"
+            app:draw_progress_text="true"
+            android:max="60"
+            android:progress="0"
+            app:style="line"
+            app:line_width="4dp"
+            app:line_count="60"
+            app:progress_shader="sweep"
+            app:progress_stroke_cap="round"
+            app:progress_stroke_width="4dp"
+            app:progress_start_color="#000000"
+            app:progress_end_color="#000000"
+            app:progress_text_color="#ffffff"
+            app:progress_text_size="25sp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="00:00:00"
+            android:paddingBottom="50dp"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the button to start recording"
+        android:textSize="18sp"
+        android:layout_above="@+id/rlbottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+<RelativeLayout
+    android:id="@+id/rlbottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="40dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/ivstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/stop"/>
+
+
+</RelativeLayout>
+
+    <Chronometer
+        android:id="@+id/chstartrecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

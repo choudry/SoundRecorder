@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "409126116558",
+    "firebase_url": "https://soundrecorder-e16e5.firebaseio.com",
+    "project_id": "soundrecorder-e16e5",
+    "storage_bucket": "soundrecorder-e16e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409126116558:android:9fe2c1f9a08973b2",
+        "android_client_info": {
+          "package_name": "sultaani.com.soundrecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409126116558-jg2inhp8vhc8td3ldmrr3tfn71ulkijc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3toOjZOLtaZQgKCkJMQ74cDC9niwQQUw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
